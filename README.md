@@ -2,9 +2,9 @@
 
 ## Instalation
 
-Make sure you have node.js installed on your machine.
-First run `npm install -g @angular/cli` to install Angular CLI globally.
-Then run `npm i` to install all project (Zone App) dependencies. 
+* Make sure you have node.js installed on your machine.
+* First run `npm install -g @angular/cli` to install Angular CLI globally.
+* Then run `npm i` to install all project (Zone App) dependencies. 
 
 ## Development server
 
