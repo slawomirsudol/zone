@@ -24,7 +24,7 @@ Run `npm start` for a dev server. Then navigate to `http://localhost:4200/`. The
 * The above approach requires to handle asynchronous data somehow
 * App is divided into components to keep the whole solution relatively clean
 * First / initial place where data is loaded is `dashboard-routing.module.ts` where two resolvers are calling API: `MovieListResolver` (1st page of movies, action `LOAD_MOVIES`) & `GenreListResolver` (all genres, action `LOAD_GENRES`)
-* Requested data updates application store and `dashboard.component.ts` subscribes to application store changes - in `ngOnInit` method. 
+* Retrieved data (movies & genres) updates application store (with `LOAD_MOVIES` & `LOAD_GENRES` actions) and `dashboard.component.ts` subscribes to application store changes - in `ngOnInit` method. 
 * Then all the consecutive data loads (next pages with movies) happen inside `dashboard.component.ts` - method `loadMoreMovies` updates application store with next pages of movies (action `LOAD_MOVIES`)
 * All the data (for filters and for movie list) from dashboard component is pushed to it's child components  using angular one way databinding - `@Input()` in child components. To see how data is pushed to the children from dashhboard component level, check `dashboard.component.html` 
 * Filtering happens in two components `movie-list-rating-filter` & `movie-list-genre-filter`. When changing those filters, application store is updated using two actions `UPDATE_GENRE_FILTER` & `UPDATE_RATING_FILTER` 
