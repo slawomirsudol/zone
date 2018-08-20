@@ -6,6 +6,9 @@
 * First run `npm install -g @angular/cli` to install Angular CLI globally.
 * Then run `npm i` to install all project (Zone App) dependencies. 
 
+## Demo
+hosted on Firebase: https://zone-app-da2dd.firebaseapp.com/dashboard
+
 ## Development server
 
 Run `npm start` for a dev server. Then navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
