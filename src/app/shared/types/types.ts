@@ -1,3 +1,15 @@
+interface MovieResult {
+  results: Movie[];
+  dates: any;
+  page: number;
+  total_pages: number;
+  total_results: number;
+}
+
+interface Genre {
+  id: number;
+  name: string;
+}
 
 interface MovieListState {
   pagedMovies: MovieResult[];
@@ -22,19 +34,6 @@ interface Movie {
   adult: false;
   overview: string;
   release_date: string;
-}
-
-interface MovieResult {
-  results: Movie[];
-  dates: any;
-  page: number;
-  total_pages: number;
-  total_results: number;
-}
-
-interface Genre {
-  id: number;
-  name: string;
 }
 
 export { Movie, Genre, MovieResult, MovieListState };
