@@ -25,7 +25,7 @@ Run `npm start` for a dev server. Then navigate to `http://localhost:4200/`. The
 * Requested data updates application store and `dashboard.component.ts` subscribes to application store changes - in `ngOnInit` method. 
 * Then all the consecutive data loads (next pages with movies) happen inside `dashboard.component.ts` - method `loadMoreMovies` updates application store with next pages of movies (action `LOAD_MOVIES`)
 * All the data (for filters and for movie list) from dashboard component is pushed to it's child components  using angular one way databinding - `@Input()` in child components. To see how data is pushed to the children from dashhboard component level, check `dashboard.component.html` 
-* Filtering happens in two components `movie-list-rating-filter` & `movie-list-genre-filter`. When changing those filters, application store is updated with two actions `UPDATE_GENRE_FILTER` & `UPDATE_RATING_FILTER` 
+* Filtering happens in two components `movie-list-rating-filter` & `movie-list-genre-filter`. When changing those filters, application store is updated using two actions `UPDATE_GENRE_FILTER` & `UPDATE_RATING_FILTER` 
 * After above filter changes - dashboard component (subscribed to whole application store, so also to filter changes) filters the whole data set of movies against most recent filter values
 
 ## Implemented features
