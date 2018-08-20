@@ -41,8 +41,4 @@ export class ZoneApiService {
         return data.genres;
       });
   }
-
-  public getImageThumbnailUrl(imageKey: string): string {
-    return `https://d1cuyjsrcm0gby.cloudfront.net/${imageKey}/thumb-320.jpg`;
-  }
 }
