@@ -13,6 +13,8 @@ Run `npm start` for a dev server. Then navigate to `http://localhost:4200/`. The
 * App is created using Angular 2+ framework
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 * Graphical elements were imported from Angular Material + some custom styling has beed applied
+* App was tested on Windows 10 operating system
+* npm -v  returns `4.1.2`
 
 ## Implementation details
 
