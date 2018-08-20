@@ -1,0 +1,6 @@
+<div class="movie-grid">
+  <div *ngIf="movieList.length === 0" class="no-movies-placeholder">
+    No movies based on applied filters :'(
+  </div>
+  <app-movie-list-item *ngFor='let movie of movieList;' [movie]="movie"></app-movie-list-item>
+</div>

@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex:1;
+  justify-content: center;
+  overflow: hidden;
+
+  .no-movies-placeholder {
+    color: grey;
+    font-size: 20px;
+    padding: 40px;
+  }
+
+  .movie-grid {
+    display: flex;
+    max-width: 280px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 800px) {
+    .movie-grid {
+      max-width: 600px;
+    }
+  }
+
+  @media (min-width: 1140px) {
+    .movie-grid {
+      max-width: 865px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .movie-grid {
+      max-width: 1160px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .movie-grid {
+      max-width: 1480px;
+    }
+  }
+}

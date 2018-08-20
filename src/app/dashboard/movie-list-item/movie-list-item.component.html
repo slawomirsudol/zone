@@ -1,0 +1,14 @@
+<mat-card class="movie-card">
+  <mat-card-header>
+    <mat-card-title matTooltip="{{movie.title}}" matTooltipPosition="above">
+      {{movie.title}}
+    </mat-card-title>
+    <div class="movie-rating">
+      <strong>{{movie.vote_average}}</strong>/10
+    </div>
+  </mat-card-header>
+  <img mat-card-image src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
+  <mat-card-subtitle>
+    <span style="margin-right: 10px;" *ngFor="let genreName of movie.genreNames;">{{genreName}}</span>
+  </mat-card-subtitle>
+</mat-card>

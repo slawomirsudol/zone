@@ -1,0 +1,42 @@
+@import '../shared/styles/variables';
+@import '../shared/styles/panel';
+
+:host {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+
+  div {
+    justify-content: center;
+    align-items: center;
+
+    .load-more {
+      width: 350px;
+      margin: 30px;
+    }
+  }
+
+  .movie-list-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
+
+  > * {
+    flex: 1
+  }
+}
+
+.layout-column {
+  display: flex;
+  flex-direction: column;
+}

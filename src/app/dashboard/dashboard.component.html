@@ -1,0 +1,8 @@
+<div class="layout-column">
+  <div class="movie-list-filters">
+    <app-movie-list-genre-filter [genreList]="genreList"></app-movie-list-genre-filter>
+    <app-movie-list-rating-filter></app-movie-list-rating-filter>
+  </div>
+  <app-movie-list [movieList]="filteredMovieList"></app-movie-list>
+  <button class="load-more" mat-button (click)="loadMoreMovies($event)">Load more</button>
+</div>
