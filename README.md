@@ -7,7 +7,7 @@
 * Then run `npm i` to install all project (Zone App) dependencies. 
 
 ## Demo
-hosted on Firebase: https://zone-app-da2dd.firebaseapp.com/dashboard
+hosted on Firebase: https://zone-app-da2dd.firebaseapp.com
 
 ## Development server
 
